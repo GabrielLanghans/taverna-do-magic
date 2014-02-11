@@ -1,0 +1,15 @@
+{
+    "rules": {
+        "cards": {
+          ".read": true,
+          ".write": true
+        },
+        "users": {
+          "$user": {
+            ".read": "$user == auth.uid",
+            ".write": "!data.exists() || $user == auth.uid",
+            ".validate": "newData.hasChildren(['uid', 'name', 'tradeList'])"
+          }
+        }
+    }
+}

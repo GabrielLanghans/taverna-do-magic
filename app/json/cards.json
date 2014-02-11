@@ -1,0 +1,6 @@
+{
+	"cards":{
+		"-001": {"id": "-001", "edition":"bng", "nameEN":"Akroan Phalanx", "namePT":"Falange Acrosana"},
+		"-002": {"id": "-002", "edition":"bng", "nameEN":"Elite Skirmisher", "namePT":"Escaramuçador de Elite"}
+	}
+}

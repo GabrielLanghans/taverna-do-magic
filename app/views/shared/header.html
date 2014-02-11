@@ -1,0 +1,10 @@
+
+	<!-- https://graph.facebook.com/gabriel.langhans/picture -->
+
+	<div class="pull-right" data-ng-controller="authCtrl">		
+		<button ng-hide="loginObj.user" type="button" class="btn btn-default navbar-btn" ng-click="login('facebook')">Logar com Facebook</button> 
+		<p ng-show="loginObj.user" class="navbar-text">
+			<!-- Olá, {{user.username}} | <a href="javascript:void(0);" class="navbar-link" ng-click="loginObj.$logout()">logout</a> -->
+			Olá, {{user.username}} | <a href="javascript:void(0)" class="navbar-link" ng-click="logout()">logout</a>
+		</p>
+	</div>

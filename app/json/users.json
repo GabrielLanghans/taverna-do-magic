@@ -1,0 +1,23 @@
+{
+  "users" : {
+    "facebook:100002807237878" : {
+      "uid" : "facebook:100002807237878",
+      "name" : "Gabriel Langhans",
+      "tradeList" : [
+        {"id": "-001"},
+        {"id": "-002"}
+      ]
+    },
+    "facebook:100007322078152" : {
+      "uid" : "facebook:100007322078152",
+      "name" : "Gabriel US",
+      "tradeList" : [
+        {"id": "-002"}
+      ]
+    }
+  },
+  "cards":{
+    "-001": {"id": "-001", "edition":"bng", "nameEN":"Akroan Phalanx", "namePT":"Falange Acrosana"},
+    "-002": {"id": "-002", "edition":"bng", "nameEN":"Elite Skirmisher", "namePT":"Escaramuçador de Elite"}
+  }
+}
