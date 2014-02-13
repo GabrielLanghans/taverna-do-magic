@@ -60,9 +60,12 @@ tavernadomagicApp.config(function ($routeProvider) {
                         obj.$on('loaded', function() {
                             def.resolve(obj);
                         });
-                        defer.resolve(def.promise);
+                        def.promise.then(function(result){
+                            defer.resolve({cards: result, user: ''});
+                        });
                     }
                     else{
+
                         console.log('=======================');
                         console.log('usuário logado: ', loginStatus);
                         console.log('=======================');

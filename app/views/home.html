@@ -1,17 +1,44 @@
-<div>
-  
-  DATA:<br>
-  {{data}}
-  <br>
-  <br>
-  <br>
-  	
-  data.cards:<br>
-  {{data.cards}}
-  <br>
-  <br>
-  <br>
-  	
-  data.user:<br>
-  {{data.user}}
+<div class="container">
+
+    <h2>Cartas que procuro</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="sr-only" for="want-field">Nome</label>
+                    <input data-ng-model="cards.field" type="text" class="form-control" id="want-field" placeholder="Digite o nome da carta">
+                    
+                    <ul class="autocomplete">
+                        <li data-ng-repeat='card in data.cards | toArray | filter:cards.field'>{{card.namePT}}</li>
+                    </ul>
+                </div>                
+                <button type="submit" class="btn btn-default">Adicionar</button>
+            </form>
+        </div>
+        
+        
+        
+        <div class="col-md-6">.col-md-6</div>
+    </div>
+
+    DATA:<br>
+    {{data}}
+    <br>
+    <br>
+    <br>
+
+    data.cards:<br>
+    {{data.cards}}
+    <br>
+    <br>
+    <br>
+
+    data.user:<br>
+    {{data.user}}
+
+
+    <h2>Com quem encontrar?</h2>
+
+
 </div>
